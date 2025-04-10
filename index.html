@@ -22,15 +22,19 @@
       position: relative;
     }
     
+    
     .hero-video {
       position: absolute;
       top: 0;
       left: 0;
-      width: 10%; /* Imposta la larghezza al 10% */
-      height: 10%; /* Imposta l'altezza al 10% */
+      width: 100%;
+      height: auto; /* Mantiene proporzioni corrette */
+      max-width: 100%; /* Limita la larghezza al 100% del contenitore */
+      max-height: 100%; /* Limita l'altezza al 100% del contenitore */
       object-fit: cover;
       z-index: -1;
     }
+
     
     footer {
       background-color: #222;
