@@ -1,4 +1,3 @@
-Sitemap: https://extremefuni.github.io/sitemap.xml
-
 User-agent: *
 Disallow:
+Sitemap: https://extremefuni.github.io/sitemap.xml
