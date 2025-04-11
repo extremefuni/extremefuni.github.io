@@ -57,6 +57,26 @@
       width: 40px;
       height: 40px;
     }
+    
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      margin: 20px 0;
+     }
+
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translateX(-50%);
+     }
+
   </style>
 </head>
 <body>
@@ -94,8 +114,14 @@
   <section id="chi-siamo" class="py-5">
     <div class="container">
       <h2 class="mb-4"><i class="bi bi-people-fill"></i> Ci presentiamo</h2>
-      <p><strong>ExtremeFuni</strong> è un'azienda leader nel settore dell'edilizia su fune, operante nelle province di <strong>Roma, Rieti, Frosinone, Latina</strong> e <strong>Viterbo</strong>. Offriamo una vasta gamma di servizi specializzati, garantendo interventi rapidi svolti in totale sicurezza, economicamente vantaggiosi e senza l'utilizzo di ponteggi.</p>
-    </div>
+      <p><strong>ExtremeFuni</strong> è un'azienda leader nel settore dell'edilizia su fune, operante nelle province di <strong>Roma, Rieti, Frosinone, Latina</strong> e <strong>Viterbo</strong>. Offriamo una vasta gamma di servizi specializzati, garantendo interventi rapidi svolti in totale sicurezza, economicamente vantaggiosi e senza l'utilizzo di ponteggi.</p>    
+      <div class="video-container">
+        <video width="560" height="315" controls>
+          <source src="videos/tuo-video.mp4" type="video/mp4">
+          Il tuo browser non supporta il tag video.
+        </video>
+      </div>
+    </div>
   </section>
 
   <!-- Servizi -->
