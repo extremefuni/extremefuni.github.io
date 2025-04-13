@@ -63,7 +63,7 @@
       padding-bottom: 56.25%; /* 16:9 */
       height: 0;
       overflow: hidden;
-      max-width: 560px;
+      max-width: 100%;
       background: #000;
       margin: 20px auto;
      }
@@ -71,16 +71,15 @@
     .video-container video {
       position: absolute;
       top: 0;
-      left: 50%;
+      left: 0%;
       width: 100%;
       height: 100%;
-      transform: translateX(-50%);
      }
     
      @media (max-width: 768px) {
        .video-container {
          padding-bottom: 75%; /* Aumenta l'altezza per schermi più piccoli */
-         max-width: 80%; /* Permette al video di occupare tutta la larghezza disponibile */
+         max-width: 100%; /* Permette al video di occupare tutta la larghezza disponibile */
        }
      }
 
@@ -128,7 +127,7 @@
       <source src="videos/terzo normal quality.mp4" type="video/mp4">
       Il tuo browser non supporta il tag video.
     </video> -->
-    <div class="container" style="margin-top: 120px;">
+    <div class="container" style="margin-top: 160px;">
       <h1 class="display-4">ExtremeFuni</h1>
       <p class="lead"><strong>Innovazione e Professionalità nell'Edilizia su Fune nel Lazio</strong></p>
     </div>
