@@ -20,6 +20,41 @@
       color: white;
       padding: 20px 0;
     }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .gallery-item {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s;
+    }
+    .gallery-item:hover {
+        transform: scale(1.05);
+    }
+    .gallery-item video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .gallery-item h3 {
+        margin: 0;
+        padding: 10px;
+        background: #333;
+        color: #fff;
+        text-align: center;
+    }
+
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
