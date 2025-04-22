@@ -275,8 +275,18 @@
             </div>
             <div class="mb-3">
               <label for="budget" class="form-label">Budget indicativo</label>
-              <input type="text" class="form-control" id="budget" name="budget">
+              <select class="form-select" id="budget" name="budget">
+                <option value="0-250 euro">0-250€</option>
+                <option value="250-500 euro">250-500€</option>
+                <option value="500-1000 euro">500-1000€</option>
+                <option value="1000-5000 euro">1000-5000€</option>
+                <option value="5000-10000 euro">5000-10000€</option>
+                <option value="10000-50000 euro">10000-50000€</option>
+                <option value=">50000 euro">Maggiore di 50000€</option>
+                <option value="non specificato" selected>Non specificato</option>
+              </select>
             </div>
+
             <div class="mb-3">
               <label for="messaggio" class="form-label">Messaggio</label>
               <textarea class="form-control" id="messaggio" name="messaggio" rows="4" required></textarea>
