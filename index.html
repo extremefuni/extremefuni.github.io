@@ -103,30 +103,41 @@
       animation: moveUp 10s ease-in-out infinite;
     }
 
+    .logo-img {
+      height: 40px; /* o la misura che preferisci */
+      width: auto;
+    }
+
 
 
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">ExtremeFuni</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi siamo</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#perche-noi">Perché noi</a></li>
-          <li class="nav-item"><a class="nav-link" href="galleria-lavori.html">Galleria lavori</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
-        </ul>
-      </div>
+  <!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.jpeg" alt="Logo ExtremeFuni" class="logo-img animate__animated animate__fadeInDown me-2">
+      <span class="fw-bold">ExtremeFuni</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi siamo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#perche-noi">Perché noi</a></li>
+        <li class="nav-item"><a class="nav-link" href="galleria-lavori.html">Galleria lavori</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Hero Section -->
   <header class="hero text-center"> 
