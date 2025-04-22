@@ -246,19 +246,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
   <script>
-    window.addEventListener('scroll', function() {
-      const heroText = document.querySelector('.hero h1');
-      const heroSubText = document.querySelector('.hero p');
-      const scrollPosition = window.scrollY;
-
-      if (scrollPosition > 50) { // Puoi regolare il valore di 50 in base alle tue esigenze
-        heroText.style.transform = 'translateY(-20px)';
-        heroSubText.style.transform = 'translateY(-20px)';
-      } else {
-        heroText.style.transform = 'translateY(0)';
-        heroSubText.style.transform = 'translateY(0)';
-      }
-    });
+  window.addEventListener('scroll', function () {
+    const heroText = document.querySelector('.hero h1');
+    const heroSubText = document.querySelector('.hero p');
+    const scroll = window.scrollY;
+  
+    heroText.style.transform = `translateY(${Math.min(-scroll / 5, -20)}px)`;
+    heroSubText.style.transform = `translateY(${Math.min(-scroll / 5, -20)}px)`;
+  });
   </script>
 
 </body>
