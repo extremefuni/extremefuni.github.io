@@ -72,15 +72,26 @@
       justify-content: center;
       cursor: pointer;
     }
+
+    .logo-img {
+      height: 80px; /* o la misura che preferisci */
+      width: auto;
+    }
     
   </style>
 </head>
 <body>
-
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">ExtremeFuni | Galleria lavori</a>
+       <!-- <a class="navbar-brand" href="https://extremefuni.github.io">Extreme Funi | Galleria lavori</a> -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.jpeg" alt="Logo ExtremeFuni" class="logo-img animate__animated animate__fadeInLeft me-2">
+      <span class="fw-bold">Extreme Funi</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
