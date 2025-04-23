@@ -388,7 +388,7 @@
     const thankYou = document.getElementById('thankYouMessage');
 
     // Se la checkbox non è selezionata, blocca l'invio
-    if (!form.elements['privacy'].checked) {
+    if (!form.elements['privacyCheck'].checked) {
       alert("Per favore accetta l'informativa sulla privacy per procedere.");
       return;
     }
@@ -416,6 +416,14 @@
     }).catch(error => {
       alert("Errore di rete. Riprova più tardi.");
     });
+  });
+
+   // Abilita il pulsante solo se la checkbox è spuntata
+  const privacyCheckbox = document.getElementById('privacyCheck');
+  const submitBtn = document.getElementById('submitBtn');
+
+  privacyCheckbox.addEventListener('change', function () {
+    submitBtn.disabled = !this.checked;
   });
     
   </script>
