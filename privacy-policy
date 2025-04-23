@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ExtremeFuni - Edilizia su funi</title>
+  <meta name="description" content="Esperti in edilizia su funi per lavori professionali in totale sicurezza.">
+  <!-- questo blocco è per il SEO -->
+  <meta name="keywords" content="Extreme Funi, sicurezza, funi, lavori in quota, edilizia, DPI, ponteggi, roma, lazio, frosinone, latina, viterbo, tusciafuni, tuscia">
+  <meta name="author" content="ExtremeFuni">
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://extremefuni.github.io/" />
+  <!-- fine blocco per il SEO -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: url('images/medium-ok.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 100px 0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+      /* position: relative; */
+      /* height: 100vh; */ /* Imposta l'altezza della sezione a 100% dell'altezza del viewport */
+    }
+    
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
+    }
+    
+     .hero h1, .hero p {
+       margin-top: 20px;
+       transition: transform 0.4s ease-in-out;
+       will-change: transform;
+     }
+
+    
+    .animate {
+      animation: moveUp 10s ease-in-out infinite;
+    }
+
+    .logo-img {
+      height: 80px; /* o la misura che preferisci */
+      width: auto;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.jpeg" alt="Logo ExtremeFuni" class="logo-img animate__animated animate__fadeInLeft me-2">
+      <div class="text-center">
+        <div class="animate__animated animate__fadeIn animate__delay-1s">
+          <span class="lead d-block"><strong>Informativa Privacy</strong></span>
+        </div>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi siamo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#perche-noi">Perché noi</a></li>
+        <li class="nav-item"><a class="nav-link" href="galleria-lavori.html">Galleria lavori</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <header class="hero text-center"> 
+    <!-- <video autoplay muted loop>
+      <source src="videos/terzo normal quality.mp4" type="video/mp4">
+      Il tuo browser non supporta il tag video.
+    </video> -->
+    <div class="container" style="margin-top: 190px;">
+      <h1 class="display-4">Informativa sul trattamento dei dati personali</h1>
+      <p class="lead"><strong>ai sensi dell’art. 13 del Regolamento (UE) 2016/679</strong></p>
+    </div>
+  </header>
+ 
+
+  <!-- Privacy -->
+  <section id="privacy" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">I nostri servizi</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <p>INFORMAZIONI GENERALI
+
+Con la presente informativa, poiché titolari del trattamento dei dati personali (di seguito semplicemente “Titolare”) – desideriamo informarTi sul trattamento dei dati personali che fornirai attraverso la navigazione sul presente Sito Web extremefuni.github.io, di seguito semplicemente “Sito web”.
+
+Per qualsiasi chiarimento, informazione, esercizio dei diritti elencati nella presente informativa, si prenda contatti con
+e-mail: extremefuni.servizi@gmail.com
+
+Il Reg. UE 2016/679 e il D.Lgs 196/2003, come modificato dal D.Lgs. 101/2018, stabiliscono le regole per proteggere e tutelare le persone fisiche con riguardo al trattamento dei loro dati personali e la presente informativa è redatta in conformità al nuovo dettato legislativo.
+
+L’informativa potrà subire delle modifiche a seguito dell’introduzione di nuove norme, per cui ti invitiamo a visitare periodicamente la presente sezione per l’aggiornamento.
+
+La Privacy Policy che stai leggendo è esclusivamente riferibile al Sito Web extremefuni.github.io e il Titolare non risponde per le modalità di gestione del trattamento dei dati personali effettuata da siti Web terzi linkabili attraverso la sezione Cookie, oppure attraverso le eventuali finestre-link presenti nella Homepage.
+
+Secondo la legge, il trattamento dei dati personali è improntato ai principi di correttezza, liceità, trasparenza, esattezza, limitazione delle finalità e della conservazione, minimizzazione, integrità dei dati, protezione della riservatezza dell’utente nonché di tutela dei suoi diritti.
+Il Titolare s’impegna ad osservare i principi suddetti e, anche a tal fine, T’informa fin da subito che – fatta eccezione per quei trattamenti cui la legge prevede il Tuo esplicito consenso – navigando in questo Sito Web, caricando o fornendo dati personali, accetti e acconsenTi di essere vincolato alle condizioni e ai termini di cui alla presente informativa. Il consenso al trattamento dei dati rilasciato dall’utente potrà essere revocato in qualsiasi momento contattando gli indirizzi suddetti.
+
+Il Titolare tratterà questi dati nel rispetto della normativa applicabile, assumendo che siano riferiti all’utente o a terzi soggetti che lo hanno espressamente autorizzato a conferirli in base ad un’idonea base giuridica che legittima il trattamento dei dati in questione. Rispetto a tali ipotesi, l’utente si pone come autonomo titolare del trattamento, assumendosi tutti gli obblighi e le responsabilità di legge. In tal senso, conferisce sul punto la più ampia manleva rispetto ad ogni contestazione, pretesa, richiesta di risarcimento del danno da trattamento, etc. che dovesse pervenire al Titolare da terzi soggetti i cui dati personali siano stati trattati attraverso il suo utilizzo del Sito in violazione della normativa applicabile.
+
+Se hai meno di 16 anni, il Tuo consenso è legittimo solo se prestato o autorizzato dalla persona titolare della responsabilità genitoriale nei Tuoi confronti, conformemente a quanto previsto dall’art. 8 Reg. UE 2016/679. Per gli interessati che si trovano sul territorio italiano, il consenso è legittimo, alle stesse condizioni di cui sopra, anche per il soggetto che abbia compiuto i 14 anni.
+
+Ad ogni buon conto, vogliamo darTi alcune informazioni sulle attività di trattamento dei dati personali svolte dal presente Sito Web e sui soggetti che li gestiscono.
+
+SOMMARIO
+
+TITOLARE DEL TRATTAMENTO
+DATI PERSONALI TRATTATI
+FINALITÀ DEL TRATTAMENTO
+BASE GIURIDICA PER IL TRATTAMENTO DEI DATI
+PERIODO DI CONSERVAZIONE DEI DATI
+MODALITÀ DI TRATTAMENTO
+DESTINATARI DEI DATI PERSONALI
+AMBITO DI CIRCOLAZIONE DEI DATI
+I DIRITTI DELL’UTENTE SECONDO IL REG. UE 2016/679
+1. TITOLARE DEL TRATTAMENTO
+
+Il Titolare del trattamento è la persona fisica o giuridica, l’autorità pubblica, il servizio o altro organismo che, singolarmente o insieme ad altri, determina le finalità ed i mezzi del trattamento di dati personali. Si occupa anche dei profili sulla sicurezza.
+Relativamente al presente Sito Web il Titolare del trattamento è Simone Del Cavallo, come sopra meglio specificato, e per ogni chiarimento o esercizio dei diritti che Ti competono potrai contattarlo al seguente indirizzo e-mail: extremefuni.github.io
+
+2. TIPI DI DATI PERSONALI TRATTATI
+
+Per “dati personali” s’intendono tutte le informazioni che potrebbero consentire direttamente o indirettamente l’identificazione degli utenti.
+
+a) Dati di navigazione
+
+I sistemi informatici e le procedure software preposte al funzionamento di questo Sito acquisiscono, nel corso del loro normale esercizio, alcuni dati personali la cui trasmissione è implicita nell’uso dei protocolli di comunicazione di Internet.
+
+In questa categoria di dati rientrano gli indirizzi IP o i nomi a dominio dei computer e dei terminali utilizzati dagli utenti, gli indirizzi in notazione URI/URL (Uniform Resource Identifier/Locator) delle risorse richieste, l’orario della richiesta, il metodo utilizzato nel sottoporre la richiesta al server, la dimensione del file ottenuto in risposta, il codice numerico indicante lo stato della risposta data dal server (buon fine, errore, ecc.) ed altri parametri relativi al sistema operativo e all’ambiente informatico dell’utente.
+
+Tali dati, necessari per la fruizione dei servizi web, vengono anche trattati allo scopo di:
+
+ottenere informazioni statistiche sull’uso dei servizi (pagine più visitate, numero di visitatori per fascia oraria o giornaliera, aree geografiche di provenienza, ecc.);
+controllare il corretto funzionamento dei servizi offerti.
+
+b) Dati comunicati dall’utente
+
+L’invio facoltativo, esplicito e volontario di messaggi all’indirizzo e-mail del Titolare, i messaggi privati inviati dagli utenti ai profili social del Titolare, nonché la compilazione e l’inoltro del modulo di contatto presente sul Sito Web, comporta l’acquisizione dei dati di contatto del mittente, necessari a rispondere, nonché di tutti i dati personali inclusi nelle comunicazioni.
+
+In particolare, il Sito Web utilizza il plugin di un Social Network, ovvero LinkedIn. Per impedire la trasmissione e la memorizzazione dei dati relativi alla navigazione Internet tramite LinkedIn, l’utente dovrà disconnettersi da questo prima di visitare il Sito Web. Per avere maggiori informazioni su questo argomento si consiglia di leggere l’Informativa sui Cookie.
+
+Per quanto riguarda il modulo “Contatti”, il rilascio dei dati richiesti non dipende da un obbligo legale né contrattuale. Il loro rilascio è pertanto facoltativo, tuttavia l’omissione dei dati da inserire nei campi obbligatori non permette al Titolare di riscontrare la richiesta inviata.
+Il periodo di conservazione dei dati termina con l’espletamento del servizio richiesto, a meno che da questo non derivi la stipula di un contratto. In tal caso, i dati verranno conservati per dieci anni dalla stipula del contratto per la tutela giudiziale nel caso di controversie scaturenti dal contratto stesso.
+
+
+C) Cookie e altri sistemi di tracciamento
+
+Non viene fatto uso di cookie per la profilazione degli utenti, né vengono impiegati altri metodi di tracciamento.
+In merito alle tipologie di cookie caricati sul presente Sito Web si consiglia di leggere l’Informativa sui Cookie.
+
+3. FINALITÀ DEL TRATTAMENTO
+
+Salvo quanto previsto in merito alle singole attività di trattamento dei dati personali presenti all’interno del Sito, in linea generale le finalità del trattamento perseguite sono le seguenti:
+
+rispondere alle richieste di informazioni e, in generale, contattare l’utente;
+dare esecuzione agli obblighi precontrattuali e contrattuali rispetto ai rapporti giuridici costituiti, anche a distanza;
+adempiere agli obblighi di legge;
+gestire gli adempimenti gestionali, amministrativi, contabili e fiscali;
+archiviazione, hosting e gestione infrastruttura di backend del Sito;
+interazione con social network e piattaforme esterne;
+statistica e gestione dei cookie;
+prevenzione e individuazione di qualsiasi abuso nell’utilizzo del Sito Web, o qualsiasi attività fraudolenta e dunque permettere ai Titolari di tutelarsi in giudizio.
+4. BASE GIURIDICA PER IL TRATTAMENTO DEI DATI
+
+Le basi giuridiche per il trattamento dei dati personali forniti dall’utente durante la navigazione sul Sito sono:
+
+l’adempimento di un obbligo legale al quale è soggetto il Titolare ex art. 6 co 1 lett. c) GDPR per quanto riguarda l’adempimento degli obblighi previsti dalla legge, dai regolamenti, dalla normativa comunitaria o da un ordine dell’Autorità;
+l’esecuzione di un contratto di cui l’interessato è parte ovvero l’esecuzione di misure precontrattuali adottate su richiesta dello stesso, ex art. 6 co 1 lett. b) GDPR per quanto riguarda i dati raccolti per rispondere alle richieste di informazioni da parte degli utenti inviate mediante l’apposito form di contatto;
+il legittimo interesse ex art. 6 co 1 lett. f) GDPR per la gestione dell’infrastruttura di backend del Sito, per la gestione dei cookie tecnici ed analitici presenti sul Sito e, più in generale, per l’esercizio dei propri diritti nel contesto della società dell’informazione.
+5. PERIODO DI CONSERVAZIONE DEI DATI
+
+I dati trattati per adempiere ad obblighi legali verranno conservati fino all’adempimento degli stessi, ed in ogni caso per il periodo di tempo necessario a dimostrare l’adempimento; i dati trattati per adempiere a finalità contrattuali fino all’adempimento delle stesse e, qualora sia concluso un contratto o vi siano state delle trattative precontrattuali, per dieci anni dalla stipula dello stesso al fine di consentire l’eventuale tutela giudiziale o stragiudiziale nonché la dimostrazione del corretto adempimento delle obbligazioni contrattualmente assunte.
+Quando il trattamento dei dati personali è necessario per il perseguimento di un interesse legittimo del Titolare, i dati personali saranno conservati sino alla soddisfazione di tale interesse ovvero fino all’eventuale opposizione dell’interessato, da esercitarsi nelle modalità indicate in seguito.
+I dati trattati per le finalità di Prevenzioni Abusi e Frodi per il tempo strettamente necessario a permettere al Titolare per difendersi in giudizio.
+
+6. MODALITÀ DEL TRATTAMENTO
+
+Sul presente Sito Web, i dati vengono raccolti per via telematica e trattati mediante operazioni effettuate in prevalenza con l’ausilio di strumenti elettronici, assicurando l’impiego di misure idonee per la sicurezza dei dati trattati e garantendone la riservatezza.
+Il presente Sito Web non prevede l’esistenza di un processo decisionale automatizzato con fini di profilazione commerciale (tecnica di marketing mirato che ricomprende l’insieme di attività di raccolta ed elaborazione dei dati degli utenti allo scopo di comprendere le loro scelte e i loro comportamenti al fine di suddividere gli interessi in “profili”, ovvero in gruppi omogenei per comportamenti o caratteristiche sempre più specifici).
+
+7. DESTINATARI DEI DATI PERSONALI
+
+Le categorie di destinatari che potrebbero venire a conoscenza dei suoi dati personali durante o successivamente all’esecuzione del contratto sono:
+
+i soggetti che elaborano i dati in esecuzione di specifici obblighi di legge;
+i consulenti esterni che eroghino prestazioni funzionali alle finalità sopra indicate, individuati per iscritto ed ai quali sono state date specifiche istruzioni scritte con riferimento al trattamento dei dati personali;
+soggetti con i quali sia necessario interagire per dare esecuzione ai servizi richiesti (es. hosting provider, istituti di credito);
+soggetti necessari per l’erogazione dei servizi offerti dal Sito tra cui a titolo esemplificativo l’invio di e-mail e l’analisi del funzionamento del Sito che agiscono tipicamente in qualità di responsabili del trattamento per conto del Titolare;
+persone autorizzate dal Titolare al trattamento di dati personali necessario a svolgere attività strettamente correlate all’erogazione dei Servizi, che si siano impegnate alla riservatezza o abbiano un adeguato obbligo legale di riservatezza (es. dipendenti e collaboratori del Titolare);
+in genere, a tutti quei soggetti pubblici e privati per i quali la comunicazione sia necessaria per il corretto e completo adempimento delle finalità indicate.
+I dati personali degli utenti potranno essere comunicati ad Autorità Giudiziaria e Forze di Polizia nei soli casi in cui questo è previsto dalla legge e utilizzati dal Titolare a fini di eventuale difesa di suoi diritti in giudizio, ove strettamente necessario.
+
+8. AMBITO DI CIRCOLAZIONE DEI DATI
+
+I trattamenti dei dati personali relativi ai servizi del Sito Web hanno luogo presso la sede del Titolare e sono curati solo da personale autorizzato al trattamento. I dati raccolti non verranno diffusi.
+Tuttavia, per l’effettiva esecuzione del servizio richiesto, alcuni dati verranno condivisi con soggetti esterni chiamati a svolgere specifici incarichi per conto del Titolare (es: fornitori di hosting, housing, cloud, fornitori di servizi di posta elettronica per le esigenze di pubblicazione del Sito e di gestione del servizio e-mail/PEC, web agency, consulenti marketing, professionisti, ecc.).
+Per fornire alcuni servizi i dati personali potrebbero essere trasferiti verso organizzazioni o paesi terzi, ove si trovano i server degli hosting o dei fornitori.
+Per il caso in cui ciò avvenga, il Titolare assicura che il trattamento Tuoi dati personali da parte di questi destinatari avviene nel rispetto della normativa applicabile. Maggiori informazioni sono disponibili presso il Titolare scrivendo al seguente indirizzo: extremefuni.servizi@gmail.com.
+Il Titolare del trattamento s’impegna a proteggere la sicurezza dei dati personali adottando tutte le misure informatiche e fisiche necessarie per la tutela dei dati personali forniti. Nessun sistema di sicurezza garantisce con assoluta certezza tale protezione, pertanto, salvi i casi di responsabilità per colpa, il Titolare del trattamento non risponde per il fatto compiuto da terzi che abusivamente accedono ai sistemi senza le dovute autorizzazioni. Per tali motivi, si suggerisce agli utenti del Sito di assicurarsi che il proprio computer sia dotato di software adeguati alla protezione della trasmissione in rete di dati (ad esempio antivirus aggiornati) e che il proprio Internet provider abbia adottato misure idonee per la sicurezza della trasmissione di dati in rete.
+
+9. I DIRITTI DELL’UTENTE SECONDO IL REG. UE 2016/679
+
+L’art. 13 par. 2 e gli artt. da 15 a 22 del Reg. UE 2016/679 (GDPR) elencano i diritti dell’utente.
+Il Titolare intende pertanto informarTi sull’esistenza:
+
+del diritto dell’interessato di chiedere al titolare l’accesso ai dati personali (art. 15 GDPR), la rettifica (art. 16 GDPR) o la limitazione del trattamento che lo riguardino (art. 18 GDPR) o di opporsi, per motivi legittimi, al loro trattamento (art. 21 GDPR), oltre al diritto alla portabilità dei dati (art. 20 GDPR);
+del diritto di chiedere la cancellazione (art. 17 GDPR), la trasformazione in forma anonima o il blocco dei dati trattati in violazione di legge, compresi quelli di cui non è necessaria la conservazione in relazione agli scopi per i quali i dati sono stati raccolti o successivamente trattati.
+Le richieste possono essere indirizzate al Titolare del trattamento, senza formalità o, in alternativa, utilizzando il modello previsto dal Garante per la Protezione dei Dati Personali reperibile al Sito:
+http://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/1089924, inviando una e-mail all’indirizzo: extremefuni.servizi@gmail.com.
+
+Qualora il trattamento sia basato sull’art. 6, paragrafo 1, lettera a) oppure sull’art. 9, paragrafo 2 lett. a), l’utente ha il diritto di revocare il consenso in qualsiasi momento senza pregiudicare la liceità del trattamento basata sul consenso prestato prima della revoca.
+
+Parimenti, in caso di violazione della normativa, l’utente ha il diritto di proporre reclamo presso il Garante per la Protezione dei Dati Personali, quale autorità preposta al controllo sul trattamento nello Stato italiano. Il modello per presentare il reclamo al Garante per la privacy è reperibile all’indirizzo:
+http://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/4535524.
+
+Per una disamina più approfondita dei diritti che Ti competono, si vedano gli artt. 15 e ss. GDPR.
+Per l’esercizio di uno o più dei diritti suddetti, potrai contattarci al seguente indirizzo e-mail: extremefuni.servizi@gmail.com.
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 Extreme Funi. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    
+  </script>
+
+</body>
+</html>
