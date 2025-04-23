@@ -428,5 +428,167 @@
     
   </script>
 
+<!-- Chatbot FAQ - Extreme Funi -->
+<style>
+  #chatbot-container {
+    position: fixed;
+    bottom: 210px;
+    right: 12px;
+    width: 300px;
+    max-width: 90vw; /* si adatta a schermi piccoli */
+    background: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: none;
+    font-family: sans-serif;
+    z-index: 9999;
+  }
+
+  #chatbot-toggle {
+    position: fixed;
+    bottom: 160px;
+    right: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 10000;
+  }
+
+  .chat-question {
+    background: #f0f0f0;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 15px;
+  }
+
+  .chat-question:hover {
+    background: #e0e0e0;
+  }
+
+  .chat-answer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  @media (max-width: 480px) {
+  #chatbot-toggle {
+    bottom: 160px;
+    right: 14px;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  #chatbot-container {
+    bottom: 230px; /* da 120px → 230px */
+    right: 10px;
+    max-width: 95vw;
+    padding: 10px;
+  }
+
+  .chat-question {
+    font-size: 14px;
+  }
+
+  .chat-answer {
+    font-size: 13px;
+  }
+}
+
+</style>
+
+
+<div id="chatbot-container">
+  <strong>🤖 Extreme Funi - FAQ</strong>
+  <div class="chat-question" onclick="showAnswer('condomini')">🏢 Lavorate su condomini?</div>
+  <div class="chat-question" onclick="showAnswer('ponteggio')">🛠 Serve il ponteggio?</div>
+  <div class="chat-question" onclick="showAnswer('copertura')">🌍 Operate in tutta Italia?</div>
+  <div class="chat-question" onclick="showAnswer('facciate')">🧼 Fate pulizia facciate?</div>
+  <div class="chat-question" onclick="showAnswer('preventivo')">💬 Come richiedere un preventivo?</div>
+  <div class="chat-answer" id="chatbot-answer"></div>
+</div>
+
+<button id="chatbot-toggle" onclick="toggleChat()">💬 FAQ</button>
+
+<script>
+  const chatbot = document.getElementById('chatbot-container');
+  const answerBox = document.getElementById('chatbot-answer');
+
+  function toggleChat() {
+    chatbot.style.display = chatbot.style.display === 'none' ? 'block' : 'none';
+  }
+
+  function showAnswer(key) {
+    const answers = {
+      condomini: "✅ Sì, effettuiamo interventi su condomini, anche in contesti complessi.",
+      ponteggio: "🚫 No, grazie alla tecnica su fune non servono ponteggi né piattaforme aeree.",
+      copertura: "📍 Lavoriamo principalmente nel Lazio, ma valutiamo interventi in tutta Italia.",
+      facciate: "🧽 Certamente! Pulizia e trattamento di facciate sono tra i nostri servizi principali.",
+      preventivo: `
+                  <form id="preventivo-form" onsubmit="return false;">
+                    <label>📍 Località:</label><br>
+                    <input type="text" name="localita" required style="width:100%; margin-bottom: 6px;"><br>
+                    <label>🏢 Tipo edificio:</label><br>
+                    <input type="text" name="edificio" required style="width:100%; margin-bottom: 6px;"><br>
+                    <label>🧰 Tipo intervento:</label><br>
+                    <input type="text" name="intervento" required style="width:100%; margin-bottom: 6px;"><br>
+                    <label>📞 Contatto (email o telefono):</label><br>
+                    <input type="text" name="contatto" required style="width:100%; margin-bottom: 10px;"><br>
+                     <label>📞 Note Aggiuntive:</label><br>
+                    <input type="text" name="note" required style="width:100%; margin-bottom: 10px;"><br>
+
+                    <button onclick="inviaWhatsApp()" style="background:#25d366; color:white; border:none; padding:8px 12px; border-radius:6px; margin-right:5px;">📲 WhatsApp</button>
+                    <!--<button onclick="inviaEmail()" style="background:#333; color:white; border:none; padding:8px 12px; border-radius:6px;">✉️ Email</button>-->
+                  </form>
+                `
+    };
+    answerBox.innerHTML = answers[key];
+  }
+
+  function getFormData() {
+  const form = document.forms['preventivo-form'];
+  return {
+    localita: form.localita.value,
+    edificio: form.edificio.value,
+    intervento: form.intervento.value,
+    contatto: form.contatto.value,
+    note: form.note.value
+  };
+  }
+
+    function inviaWhatsApp() {
+      const dati = getFormData();
+      const messaggio = `Richiesta preventivo:\n- Località: ${dati.localita}\n- Tipo edificio: ${dati.edificio}\n- Tipo intervento: ${dati.intervento}\n- Contatto: ${dati.contatto}\n- Note aggiuntive: ${dati.note}`;
+      
+      const numero = '+393464362232'; // <-- Inserisci il tuo numero WhatsApp senza +39
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(messaggio)}`;
+      window.open(url, '_blank');
+    }
+
+    /*function inviaEmail() {
+      const dati = getFormData();
+      const subject = 'Richiesta preventivo';
+      const body = `Richiesta preventivo:\n- Località: ${dati.localita}\n- Tipo edificio: ${dati.edificio}\n- Tipo intervento: ${dati.intervento}\n- Contatto: ${dati.contatto}`;
+      
+      const mailto = `mailto:tuamail@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailto;
+    }*/
+
+
+  // Mostra il bottone all'avvio
+  document.addEventListener("DOMContentLoaded", () => {
+    chatbot.style.display = 'none';
+  });
+</script>
+
 </body>
 </html>
