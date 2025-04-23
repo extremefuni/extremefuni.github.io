@@ -551,8 +551,13 @@
                   </form>
                 `
     };
-    answerBox.innerHTML = answers[key];
+    const closeButton = `<div style="text-align:right; margin-top:10px;"><button onclick="closeAnswer()" style="background:none; border:none; font-size:16px; cursor:pointer;">❌ Chiudi Risposta</button></div>`;
+    answerBox.innerHTML = (answers[key] || '') + closeButton;
   }
+
+  function closeAnswer() {
+  answerBox.innerHTML = '';
+}
 
   function getFormData() {
   const form = document.forms['preventivo-form'];
