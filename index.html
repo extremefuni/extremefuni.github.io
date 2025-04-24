@@ -86,7 +86,7 @@
        }
      }
 
-     .hero h1, .hero p {
+     .hero h1, .hero p, .hero h2 {
        margin-top: 20px;
        transition: transform 0.4s ease-in-out;
        will-change: transform;
@@ -374,7 +374,8 @@
   <script>
   window.addEventListener('scroll', function () {
     const heroText = document.querySelector('.hero h1');
-    const heroSubText = document.querySelector('.hero p');
+    <!-- qui sotto era hero p -->
+    const heroSubText = document.querySelector('.hero h2');
     const scroll = window.scrollY;
   
     heroText.style.transform = `translateY(${Math.min(-scroll / 5, -20)}px)`;
