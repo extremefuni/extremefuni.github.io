@@ -145,9 +145,13 @@
   }
 }
 
-.hover-shadow:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+.hover-shadow {
   transition: box-shadow 0.3s ease-in-out;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); /* ombra più forte */
+  transform: translateY(-5px);
 }
 
 
