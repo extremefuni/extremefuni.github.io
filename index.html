@@ -13,6 +13,7 @@
   <!-- fine blocco per il SEO -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <style>
     .hero {
       background: url('images/medium-ok.jpg') no-repeat center center;
@@ -144,6 +145,11 @@
   }
 }
 
+.hover-shadow:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 
   </style>
 </head>
@@ -202,63 +208,87 @@
   </section>
 
   <!-- Servizi -->
-  <section id="servizi" class="py-5" style="background-color: #f0f0f0;">
-    <div class="container">
-      <h2 class="mb-4">I nostri servizi</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <h5>Manutenzione e Sostituzione Grondaie</h5>
-          <p>Effettuiamo pulizia, riparazione e sostituzione di grondaie, prevenendo danni strutturali causati da ostruzioni e infiltrazioni.
-            
-          </p>
+<section id="servizi" class="py-5" style="background-color: #f0f0f0;">
+  <div class="container">
+    <h2 class="mb-5 text-center">I nostri servizi</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      
+      <!-- Servizio -->
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 hover-shadow">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-droplet-half me-2"></i>Manutenzione e Sostituzione Grondaie</h5>
+            <p class="card-text">Pulizia, riparazione e sostituzione grondaie per prevenire ostruzioni e infiltrazioni.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h5>Risanamento Facciate e Balconi</h5>
-          <p>Interveniamo su facciate e balconi, eseguendo ristrutturazioni e manutenzioni per preservare l'estetica e la sicurezza degli edifici.
-            
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h5>Tinteggiature Esterne</h5>
-          <p>Offriamo servizi di tinteggiatura esterna, migliorando l'aspetto degli edifici senza necessità di impalcature.
-            
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h5>Pulizia Vetri e Pannelli Fotovoltaici</h5>
-          <p>Specializzati nella pulizia di vetrate e pannelli solari, assicuriamo massima efficienza energetica e trasparenza.
-            
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h5>Potatura Alberi ad Alto Fusto</h5>
-          <p>Effettuiamo potature professionali, mantenendo la salute e la sicurezza degli alberi e delle aree circostanti.
-            
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h5>Installazione Sistemi di Sicurezza</h5>
-          <p>Montiamo dispositivi di sicurezza in punti difficilmente accessibili, garantendo protezione e conformità alle normative.
-            
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h5>Impermeabilizzazioni e Isolamenti</h5>
-          <p>Realizziamo interventi di impermeabilizzazione e installazione di isolanti termici e acustici, migliorando il comfort abitativo.
-            
-          </p>
-        </div>
-
-        <div class="col-md-4">
-          <h5>Installazione dissuasori volatili e reti antipiccione</h5>
-          <p>Effettuiamo installazioni di sistemi meccanici, visivi, ad ultasuoni e chimici, in grado di tener lontani gli uccelli, senza fargli alcun male.
-            
-          </p>
-        </div>
-        
       </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 hover-shadow">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-building me-2"></i>Risanamento Facciate e Balconi</h5>
+            <p class="card-text">Ristrutturazioni estetiche e funzionali su facciate e balconi per edifici sicuri e belli.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 hover-shadow">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-brush me-2"></i>Tinteggiature Esterne</h5>
+            <p class="card-text">Tinteggiatura professionale di esterni senza necessità di impalcature.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 hover-shadow">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-sun me-2"></i>Pulizia Vetri e Pannelli Fotovoltaici</h5>
+            <p class="card-text">Pulizia professionale di vetri e pannelli solari per massima efficienza.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 hover-shadow">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-tree me-2"></i>Potatura Alberi ad Alto Fusto</h5>
+            <p class="card-text">Potature professionali per garantire salute e sicurezza degli alberi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 hover-shadow">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-shield-lock me-2"></i>Installazione Sistemi di Sicurezza</h5>
+            <p class="card-text">Installazione dispositivi di sicurezza in punti critici e difficili da raggiungere.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 hover-shadow">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-moisture me-2"></i>Impermeabilizzazioni e Isolamenti</h5>
+            <p class="card-text">Isolamenti e impermeabilizzazioni per migliorare il comfort termico e acustico.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 hover-shadow">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-x-diamond me-2"></i>Dissuasori volatili e Reti antipiccione</h5>
+            <p class="card-text">Sistemi sicuri e rispettosi per allontanare uccelli da edifici e strutture.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Perchè noi -->
   <section id="perche-noi" class="py-5">
