@@ -332,11 +332,40 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="container text-center">
-      <p>&copy; 2025 Extreme Funi. <a href="privacy-policy.html" target="_blank">Informativa privacy</a>. Tutti i diritti riservati.</p>
+<footer style="position: relative;">
+  <div class="container text-center">
+    <p>
+      &copy; 2025 Extreme Funi S.R.L.S.
+      <a href="privacy-policy.html" target="_blank">Informativa privacy</a>.
+      Questo sito utilizza solo cookie tecnici, come indicato nell’
+      <span id="cookie-policy-link" style="cursor: pointer; text-decoration: underline; color: #007bff;">
+        Informativa Cookie
+      </span>.
+      Tutti i diritti riservati.
+    </p>
+    <!-- Tooltip -->
+    <div id="cookie-tooltip" style="
+      display: none;
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fefefe;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 320px;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      z-index: 9999;
+    ">
+      Questo sito non utilizza cookie di profilazione o cookie di terze parti.
+      Sono eventualmente presenti solo cookie tecnici necessari al corretto funzionamento del sito,
+      che non richiedono consenso.
     </div>
-  </footer>
+  </div>
+</footer>
 
   <!-- Pulsante WhatsApp Flottante -->
   <a
@@ -649,5 +678,34 @@
   });
 </script>
 
+// per il footer:
+<script>
+  const link = document.getElementById('cookie-policy-link');
+  const tooltip = document.getElementById('cookie-tooltip');
+
+  link.addEventListener('click', (e) => {
+    e.stopPropagation();
+    tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Chiude tooltip se si clicca fuori
+  document.addEventListener('click', (e) => {
+    if (!tooltip.contains(e.target) && e.target !== link) {
+      tooltip.style.display = 'none';
+    }
+  });
+
+  // Scroll o resize: chiude il tooltip
+  window.addEventListener('scroll', () => {
+    tooltip.style.display = 'none';
+  });
+
+  window.addEventListener('resize', () => {
+    tooltip.style.display = 'none';
+  });
+</script>
+
+  
+  
 </body>
 </html>
