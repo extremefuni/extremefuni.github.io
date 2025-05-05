@@ -143,18 +143,74 @@ Per maggiori informazioni è possibile contattare il Titolare ai riferimenti ind
 
 
   <!-- Footer -->
-  <footer>
-    <div class="container text-center">
-      <p>&copy; 2025 Extreme Funi. Tutti i diritti riservati.</p>
+<footer style="position: relative;">
+  <div class="container text-center">
+    <p>
+      &copy; Extreme Funi S.R.L.S.
+      <a href="#privacy" target="_blank">Informativa privacy</a>
+      <br><br>
+      Questo sito utilizza solo cookie tecnici, come indicato nell’
+      <span id="cookie-policy-link" style="cursor: pointer; text-decoration: underline; color: #007bff;">
+      Informativa Cookie
+      </span>
+      <br><br>
+      Tutti i diritti riservati. <a href="termini-e-condizioni-uso.html" target="_blank">Termini e Condizioni d'Uso</a>
+    </p>
+    <!-- Tooltip -->
+    <div id="cookie-tooltip" style="
+      display: none;
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fefefe;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 320px;
+      font-size: 0.9rem;
+      color: #000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      z-index: 9999;
+    ">
+      Questo sito non utilizza cookie di profilazione o cookie di terze parti.
+      Sono eventualmente presenti solo cookie tecnici necessari al corretto funzionamento del sito,
+      che non richiedono consenso.
     </div>
-  </footer>
+  </div>
+</footer>
+
 
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
   <script>
-    
+    // per il footer:
+  const link = document.getElementById('cookie-policy-link');
+  const tooltip = document.getElementById('cookie-tooltip');
+
+  link.addEventListener('click', (e) => {
+    e.stopPropagation();
+    tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Chiude tooltip se si clicca fuori
+  document.addEventListener('click', (e) => {
+    if (!tooltip.contains(e.target) && e.target !== link) {
+      tooltip.style.display = 'none';
+    }
+  });
+
+  // Scroll o resize: chiude il tooltip
+  window.addEventListener('scroll', () => {
+    tooltip.style.display = 'none';
+  });
+
+  window.addEventListener('resize', () => {
+    tooltip.style.display = 'none';
+  });
   </script>
 
 </body>
