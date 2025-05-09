@@ -710,25 +710,6 @@
     tooltip.style.display = 'none';
   });
 </script>
-
-
-<!-- quando si naviga su mobile, per far scomparire il menu dopo aver cliccato sull'hamburgher e sul link scelto  -->
- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-    const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', function () {
-        // Se è visibile (quindi siamo su mobile), chiudilo
-        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-        if (bsCollapse) {
-          bsCollapse.hide();
-        }
-      });
-    });
-  });
-</script> 
   
 </body>
 </html>
